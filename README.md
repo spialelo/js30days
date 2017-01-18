@@ -5,3 +5,4 @@ Starter files retrieved from: https://github.com/wesbos/JavaScript30
 **2017.01.14** - Completed JS Clock and CSS Variable w/ JS challenge.
 **2017.01.15** - Completed Array Cardio Day 1 and Flex Panels Image Gallery.
 **2017.01.16** - Completed Flex Panels Gallery, the Type Ahead, and the Array Cardio Day 2 challenge.
+**2017.01.17** - HTML 5 Canvas, day 8, completed.
