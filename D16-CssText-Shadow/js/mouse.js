@@ -13,6 +13,14 @@ function shadow(e) {
     let { offsetX: x, offsetY: y } = e;
 
     //this is the div with hero class and the target is the h1 tag
+    //console.log(this, e.target);
+    if (this !== e.target) {
+        x = x + e.target.offsetLeft;
+        y = y + e.target.offsetTop;
+
+    }
+
+    console.log(x, y);
 
 }
 
