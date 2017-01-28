@@ -12,4 +12,6 @@
 **2017.01.21**: Day 12, Key Detection completed.
 **2017.01.22**: Day 13, Slide in scroll completed and Day 14 Difference between copy and reference.
 **2017.01.23**: Day 15, LocalStorage and eventDelegation,were very interesting. I want to learn more about LocalStorage.
-**2017.01.24: 2017.01.26** - CSS Text Shadow on Mouse move. Reading on AngularJS 1.
+**2017.01.24 - 2017.01.26** - CSS Text Shadow on Mouse move. Reading on AngularJS 1.
+**2017.01.27** - Completed day 17 and began work on day 18.
+**2017.01.28** - Completed day 18. 
