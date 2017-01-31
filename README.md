@@ -14,4 +14,6 @@
 **2017.01.23**: Day 15, LocalStorage and eventDelegation,were very interesting. I want to learn more about LocalStorage.
 **2017.01.24 - 2017.01.26** - CSS Text Shadow on Mouse move. Reading on AngularJS 1.
 **2017.01.27** - Completed day 17 and began work on day 18.
-**2017.01.28** - Completed day 18. 
+**2017.01.28** - Completed day 18 and 20. Started day 19 but realized it needs a server. Was half way through 20 and realized the same. Finished it but will go back and redo. Skipped day 21, because I believe it needs a server also based on the package.json file. Moving onto day 22.
+**2017.01.29** - Didn't do physical coding. Read a litte about AngularJS, but for the most part took a rest day.
+**2017.01.30** - Started work on day 22, but then got distracted with a challenge I was working on at work. I figured it out around 12:30am 1/31.
