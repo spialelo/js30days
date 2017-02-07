@@ -19,3 +19,4 @@
 **2017.01.30** - Started work on day 22, but then got distracted with a challenge I was working on at work. I figured it out around 12:30am 1/31.
 **2017.02.02** - Completed day 22 higlighter challenge.
 **2017.02.03** - Completed day 23 Speech Synthesis.
+**2017.02.06** - Completed day 24 Sticky Nav.
