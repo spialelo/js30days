@@ -20,3 +20,5 @@
 **2017.02.02** - Completed day 22 higlighter challenge.
 **2017.02.03** - Completed day 23 Speech Synthesis.
 **2017.02.06** - Completed day 24 Sticky Nav.
+**2017.02.07** - Started day 25 and then got distracted by work.
+**2017.02.08** - Completed day 25.
