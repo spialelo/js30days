@@ -3,9 +3,20 @@ const background = document.querySelector('.dropdownBackground');
 const nav = document.querySelector('.top');
 
 function handleEnter() {
-    console.log('Enter');
+
     this.classList.add('trigger-enter');
-    setTimeout(() => this.classList.add('trigger-enter-active'), 150);
+    setTimeout(() => {
+        if (this.classList.contains('trigger-enter')) {
+            this.classList.add('trigger-enter-active')
+        }
+    }, 150);
+
+    /* Another way by Wes:
+
+    setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+
+     */
+
     background.classList.add('open');
 
 
@@ -15,19 +26,14 @@ function handleEnter() {
 
     const coords = {
         height: dropdownCoords.height,
-        width: dropdownCoords.width
+        width: dropdownCoords.width,
+        left: dropdownCoords.left - navCoords.left, //offset coordinates by subtracting nav coords from dropdown coords
+        top: dropdownCoords.top - navCoords.top
     };
-
-    const nvCoords = {
-        left: navCoords.left,
-        top: navCoords.top
-    };
-
 
     background.style.setProperty('width', `${coords.width}px`);
     background.style.setProperty('height', `${coords.height}px`);
-    background.style.setProperty('left', `${nvCoords.left}px`);
-    background.style.setProperty('top', `${nvCoords.top}px`);
+    background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
 
 }
 
