@@ -24,4 +24,4 @@
 **2017.02.08** - Completed day 25.
 **2017.02.10** - Working on day 26...Completed day 26. Still need to go back and finish days 19 and 21.
 **2017.02.11** - Working on day 27.
-**2017.02.12** - Finished day 27.
+**2017.02.12** - Finished day 27. Started day 28.
