@@ -6,6 +6,10 @@ const buttons = document.querySelectorAll('[data-time]');
 
 
 function timer(seconds) {
+    //clear any existing timers, when new instance of timer is started
+
+    clearInterval(countdown);
+
     const now = Date.now();
     const then = now + seconds * 1000;
     displayTimeLeft(seconds);
@@ -42,8 +46,9 @@ function displayEndTime(timestamp) {
 }
 
 
-function startTime() {
-    console.log(this);
+function startTimer() {
+    const seconds = parseInt(this.dataset.time);
+    timer(seconds);
 }
 
-buttons.forEach(button => button.addEventListener('click', startTime));
+buttons.forEach(button => button.addEventListener('click', startTimer));
