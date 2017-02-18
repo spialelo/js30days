@@ -52,3 +52,5 @@
   }
 
   moles.forEach(mole => mole.addEventListener('click', bonk));
+
+  /* store scores in local storage. make levels. */
