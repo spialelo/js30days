@@ -27,3 +27,4 @@
 **2017.02.12** - Finished day 27. Started day 28...day 28 finished.
 **2017.02.13** - Day 29, countdown clock started.
 **2017.02.14** - Day 29, completed.
+**2017.02.17** - Day 30, completed. This was fun. I may go back and alter the style a bit. Maybe see if I can update the cursor to a mallet.
