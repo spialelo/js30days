@@ -20,7 +20,30 @@ function getVideo() {
 function paintToCanvas() {
     const width = video.videoWidth;
     const height = video.videoHeight;
+    canvas.width = width;
+    canvas.height = height;
+
+    return setInterval(() => {
+        ctx.drawImage(video, 0, 0, width, height);
+    }, 16);
+
 }
 
+function takePhoto() {
+    //played the sound of a photo taking
+    snap.currentTime = 0;
+    snap.play();
+
+    //now need to take the data out
+    const data = canvas.toDataURL('image/jpeg');
+    const link = document.createElement('a');
+    link.setAttribute('download', 'bonita');
+    link.textContent = 'Download Image';
+    strip.insertBefore(link, strip.firstChild);
+    console.log(data);
+
+}
 
 getVideo();
+
+video.addEventListener('canplay', paintToCanvas);
