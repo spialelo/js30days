@@ -4,6 +4,7 @@ const ctx = canvas.getContext('2d');
 const strip = document.querySelector('.strip');
 const snap = document.querySelector('.snap');
 
+//gets the video
 function getVideo() {
     navigator.mediaDevices.getUserMedia({ video: true, audio: false })
         .then(localMediaStream => {
@@ -16,7 +17,7 @@ function getVideo() {
         });
 }
 
-
+//paints the video to the canvas
 function paintToCanvas() {
     const width = video.videoWidth;
     const height = video.videoHeight;
@@ -25,10 +26,13 @@ function paintToCanvas() {
 
     return setInterval(() => {
         ctx.drawImage(video, 0, 0, width, height);
+        //do more research into canvas!!! fun!!!
+        const pixels = ctx.getImageData(0, 0, width, height);
     }, 16);
 
 }
 
+//takes photo
 function takePhoto() {
     //played the sound of a photo taking
     snap.currentTime = 0;
@@ -37,12 +41,15 @@ function takePhoto() {
     //now need to take the data out
     const data = canvas.toDataURL('image/jpeg');
     const link = document.createElement('a');
+    link.href = data;
     link.setAttribute('download', 'bonita');
-    link.textContent = 'Download Image';
+    // link.textContent = 'Download Image';
+    link.innerHTML = `<img src="${data}" alt="Bonita Mujer">`;
     strip.insertBefore(link, strip.firstChild);
     console.log(data);
 
 }
+
 
 getVideo();
 
