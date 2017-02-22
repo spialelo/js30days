@@ -27,7 +27,12 @@ function paintToCanvas() {
     return setInterval(() => {
         ctx.drawImage(video, 0, 0, width, height);
         //do more research into canvas!!! fun!!!
-        const pixels = ctx.getImageData(0, 0, width, height);
+        //take pixels out
+        let pixels = ctx.getImageData(0, 0, width, height);
+        //alter the pixels
+        pixels = redEffect(pixels);
+        //then put pixels back
+        ctx.putImageData(pixels, 0, 0);
     }, 16);
 
 }
@@ -49,6 +54,15 @@ function takePhoto() {
     console.log(data);
 
 }
+
+function redEffect() {
+    for (let i = 0; i < pixels.length; i += 4) {
+        pixels.data[i + 0] = pixels.data[i + 0] + 100; //red
+        pixels.data[i + 1] = pixels.data[i + 1] - 50; //green
+        pixels.data[i + 2] = pixels.data[i + 2] * 0.5; //blue
+    }
+}
+
 
 
 getVideo();
