@@ -28,3 +28,5 @@
 **2017.02.13** - Day 29, countdown clock started.
 **2017.02.14** - Day 29, completed.
 **2017.02.17** - Day 30, completed. This was fun. I may go back and alter the style a bit. Maybe see if I can update the cursor to a mallet. Update: Completed day 20 & 21. Day 21 was fun. I'm getting the hang of NPM and I need to redo day 21 on a Mac. I want that compass to turn. Tomorrow, I will conquer day 19.
+**2017.02.20** - Day 19 started. Half way done.
+**2017.02.21** - Day 19 completed. JavaScript30 completed. Working with the webcam, html5 vidoe player, and html5 canvas, may have been my favorites.
